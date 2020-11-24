@@ -1,17 +1,17 @@
 'use strict';
 
-let foo = function(argument) {
-    if (typeof argument !== 'string' || argument.length <= 0) {
+function stringCorrector(string) {
+    if (typeof string !== 'string' || string.length <= 0) {
         alert('Пожалуйста, укажите строку');
-        foo(prompt('Type here'));
-    } else if (typeof argument === 'string' && argument.length < 30 && argument.length > 0){
-        argument = argument.trim();
-        console.log(argument);
-    } else if (typeof argument === 'string' && argument.length > 30) {
-        argument = argument.substring(0, 30);
-        argument += '...';
-        console.log(argument);
+        stringCorrector(prompt('Type here'));
+    } else if (typeof string === 'string' && string.length < 30 && string.length > 0){
+        string = string.trim();
+        console.log(string);
+    } else if (typeof string === 'string' && string.length > 30) {
+        string = string.substring(0, 30);
+        string += '...';
+        console.log(string);
     }
-};
+}
 
-foo(prompt('Type here'));
+stringCorrector(prompt('Type here'));
