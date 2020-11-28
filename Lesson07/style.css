@@ -1,0 +1,12 @@
+body {
+    margin: 0 auto;
+}
+
+.main {
+    width: 200px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 400px;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
