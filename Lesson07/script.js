@@ -3,9 +3,6 @@ let mainSection = document.querySelector('.weekDays');
 let date = new Date();
 let today = new Date().getDay() - 1;
 
-
-console.log(today);
-
  for (let i = 0; i < week.length; i++) {
   if (i === today) {
     if (week[i] === 'Saturday' || week[i] === 'Sunday') {
